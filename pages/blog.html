@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Digital Marketing Tips &amp; Insights | Indus Digital Consulting</title>
+  <meta name="description" content="Digital marketing tips, SEO guides, web design advice and local business growth strategies from the Indus Digital Consulting team in Mississauga.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .blog-grid { display: grid; grid-template-columns: 1fr 300px; gap: 48px; align-items: start; }
+    .posts-grid { display: grid; gap: 28px; }
+    .post-card { background:#fff; border:1px solid var(--border); border-radius:var(--radius-lg); overflow:hidden; display:grid; grid-template-columns:220px 1fr; transition:box-shadow .2s,transform .2s; }
+    .post-card:hover { box-shadow:var(--shadow-md); transform:translateY(-2px); }
+    .post-thumb { height:100%; overflow:hidden; }
+    .post-thumb img { width:100%; height:100%; object-fit:cover; min-height:180px; }
+    .post-thumb-placeholder { width:100%; height:100%; min-height:180px; background:var(--teal-light); display:flex; align-items:center; justify-content:center; font-size:42px; }
+    .post-body { padding: 24px; }
+    .post-meta { font-size:12px; color:var(--text-muted); margin-bottom:10px; display:flex; gap:12px; }
+    .post-tag { background:var(--teal-light); color:var(--teal); font-size:11px; font-weight:600; padding:3px 10px; border-radius:4px; text-transform:uppercase; letter-spacing:.04em; }
+    .post-body h2 { font-size:19px; font-weight:700; color:var(--navy); margin-bottom:10px; line-height:1.3; }
+    .post-body h2 a { color:var(--navy); }
+    .post-body h2 a:hover { color:var(--teal); }
+    .post-body p { font-size:14px; color:var(--text-muted); margin-bottom:16px; line-height:1.65; }
+    .read-more { font-size:14px; font-weight:600; color:var(--teal); }
+    .read-more:hover { color:var(--teal-dark); }
+    @media(max-width:700px){ .blog-grid{grid-template-columns:1fr} .post-card{grid-template-columns:1fr} .post-thumb{height:180px} }
+    @media(max-width:600px){ .post-card{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <div id="site-nav"></div>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <span>Blog</span></div>
+      <h1>Digital Marketing Blog</h1>
+      <p>Practical tips, expert guides, and GTA-specific insights to help your business grow online.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="blog-grid">
+
+        <!-- POSTS -->
+        <div class="posts-grid">
+
+          <article class="post-card">
+            <div class="post-thumb">
+              <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=500&q=80" alt="SEO Tips" loading="lazy">
+            </div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag">SEO</span>
+                <span>December 12, 2024</span>
+                <span>5 min read</span>
+              </div>
+              <h2><a href="#">10 Local SEO Tips to Rank Higher in Mississauga in 2025</a></h2>
+              <p>Want your business to show up at the top of Google Maps and local search? Here are the 10 most impactful local SEO changes you can make right now.</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-thumb">
+              <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&q=80" alt="Website Design" loading="lazy">
+            </div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag">Web Design</span>
+                <span>November 28, 2024</span>
+                <span>7 min read</span>
+              </div>
+              <h2><a href="#">Why Your Small Business Website Needs a Redesign in 2025</a></h2>
+              <p>Is your website more than 3 years old? Here are the signs it's hurting your business — and what a modern redesign can do for your bottom line.</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-thumb">
+              <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=500&q=80" alt="Google Business Profile" loading="lazy">
+            </div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag">Local SEO</span>
+                <span>November 10, 2024</span>
+                <span>6 min read</span>
+              </div>
+              <h2><a href="#">The Complete Guide to Google Business Profile Optimisation for GTA Businesses</a></h2>
+              <p>Your Google Business Profile is the single most important free tool for local visibility. Here's how to optimise it from top to bottom.</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-thumb-placeholder">📱</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag">Social Media</span>
+                <span>October 22, 2024</span>
+                <span>4 min read</span>
+              </div>
+              <h2><a href="#">Facebook vs Instagram vs LinkedIn: Which Platform Is Right for Your Business?</a></h2>
+              <p>Not every business needs to be on every social platform. Here's how to choose where to focus your energy for the best return on your time and money.</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-thumb-placeholder">📊</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag">Google Ads</span>
+                <span>October 5, 2024</span>
+                <span>8 min read</span>
+              </div>
+              <h2><a href="#">Google Ads vs SEO: Which Should You Invest In First?</a></h2>
+              <p>One gives you immediate results. The other builds lasting value. We break down exactly when and why to choose each — and how they work best together.</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-thumb-placeholder">✍️</div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span class="post-tag">Content</span>
+                <span>September 18, 2024</span>
+                <span>5 min read</span>
+              </div>
+              <h2><a href="#">How to Write Website Copy That Actually Converts Visitors Into Customers</a></h2>
+              <p>Great design gets visitors' attention. Great copy gets them to call. Here are the copywriting principles that consistently drive more leads from your website.</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside>
+          <div class="sidebar-cta">
+            <h4>Free Digital Audit</h4>
+            <p>Find out exactly where your website stands and what's holding it back.</p>
+            <a href="contact.html" class="btn btn-white" style="width:100%;justify-content:center">Get Free Audit →</a>
+          </div>
+          <div class="sidebar-widget">
+            <h4>Categories</h4>
+            <ul class="sidebar-services">
+              <li><a href="#">SEO <span>→</span></a></li>
+              <li><a href="#">Web Design <span>→</span></a></li>
+              <li><a href="#">Local SEO <span>→</span></a></li>
+              <li><a href="#">Content Marketing <span>→</span></a></li>
+              <li><a href="#">Social Media <span>→</span></a></li>
+              <li><a href="#">Google Ads <span>→</span></a></li>
+            </ul>
+          </div>
+          <div class="sidebar-widget">
+            <h4>Our Services</h4>
+            <ul class="sidebar-services">
+              <li><a href="website-design.html">Website Design <span>→</span></a></li>
+              <li><a href="seo.html">SEO <span>→</span></a></li>
+              <li><a href="local-seo.html">Local SEO <span>→</span></a></li>
+              <li><a href="content-marketing.html">Content Marketing <span>→</span></a></li>
+              <li><a href="social-media.html">Social Media <span>→</span></a></li>
+              <li><a href="google-ads.html">Google Ads <span>→</span></a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="container">
+      <h2>Ready to Grow Your Business Online?</h2>
+      <p>Get a free consultation with our digital marketing experts today.</p>
+      <div class="btn-group">
+        <a href="contact.html" class="btn btn-white">Get a Free Quote</a>
+        <a href="tel:+16474446543" class="btn btn-outline" style="border-color:rgba(255,255,255,.5);color:#fff">📞 (647) 444-6543</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="../assets/js/components.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
