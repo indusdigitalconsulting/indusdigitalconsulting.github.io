@@ -641,6 +641,245 @@ footer { background: var(--footer-bg); color: rgba(255,255,255,.6); padding: 60p
 .mb-0  { margin-bottom: 0; }
 
 /* ===========================
+   HERO — PERSON VARIANT
+=========================== */
+/* Remove rounded box + shadow; let the PNG cut-out float naturally */
+.hero-img--person {
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.hero-img--person img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
+  /* Nudge the figure down so feet sit at the hero's bottom edge */
+  margin-bottom: -80px;
+}
+
+/* Bullet list in hero */
+.hero-bullets {
+  list-style: none;
+  margin-bottom: 36px;
+}
+.hero-bullets li {
+  font-size: 16px;
+  color: var(--text-body);
+  padding: 7px 0;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.hero-bullets li::before {
+  content: '✓';
+  color: var(--primary);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ===========================
+   ABOUT SPLIT (section 2)
+=========================== */
+.about-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+.about-text p {
+  color: var(--text-body);
+  margin-bottom: 16px;
+  line-height: 1.75;
+}
+.about-check-item {
+  display: flex;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 0.5px solid var(--border);
+  align-items: flex-start;
+}
+.about-check-item:last-child { border-bottom: none; }
+.about-check-item .feature-check {
+  font-size: 16px;
+  margin-top: 3px;
+}
+.about-check-item strong {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--black);
+  display: block;
+  margin-bottom: 3px;
+}
+.about-check-item p {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ===========================
+   SERVICES CARD GRID (section 3)
+=========================== */
+.services-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 48px;
+}
+.service-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  transition: box-shadow .2s, transform .2s;
+  display: flex;
+  flex-direction: column;
+}
+.service-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+.service-card .card-icon {
+  margin-bottom: 18px;
+}
+.service-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 12px;
+}
+.service-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  flex: 1;
+  margin-bottom: 20px;
+}
+.service-card .card-link {
+  margin-top: auto;
+}
+
+/* ===========================
+   WHY CHOOSE US (section 4)
+=========================== */
+.why-highlight {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: var(--gold-light);
+  border: 1px solid #e8d5a0;
+  border-radius: var(--radius-lg);
+  padding: 28px 32px;
+  margin-bottom: 48px;
+}
+.why-highlight-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.why-highlight h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+.why-highlight p {
+  font-size: 15px;
+  color: var(--text-body);
+  line-height: 1.75;
+  margin: 0;
+}
+
+.why-three-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.why-pillar {
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  transition: box-shadow .2s, transform .2s;
+}
+.why-pillar:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+.why-pillar-num {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--primary);
+  opacity: .15;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.why-pillar h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 12px;
+}
+.why-pillar p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ===========================
+   CTA PERSON BAND (last section)
+=========================== */
+.cta-person-band {
+  background: var(--primary);
+  padding: 0 0 0;
+  overflow: hidden;
+}
+.cta-person-grid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 64px;
+  align-items: flex-end;
+}
+.cta-person-img {
+  display: flex;
+  align-items: flex-end;
+}
+.cta-person-img img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  /* Let the figure grow naturally from the bottom */
+  margin-bottom: 0;
+}
+.cta-person-content {
+  padding: 72px 48px 72px 0;
+}
+.cta-person-content .section-label {
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.cta-person-content h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+.cta-person-content p {
+  font-size: 16px;
+  color: rgba(255,255,255,.8);
+  line-height: 1.75;
+  max-width: 520px;
+}
+
+/* ===========================
    RESPONSIVE
 =========================== */
 @media (max-width: 960px) {
@@ -656,6 +895,13 @@ footer { background: var(--footer-bg); color: rgba(255,255,255,.6); padding: 60p
   .logo img { width: 240px; }
   .post-card { grid-template-columns: 1fr; }
   .post-thumb { height: 200px; }
+  /* New sections */
+  .about-split { grid-template-columns: 1fr; gap: 36px; }
+  .why-three-grid { grid-template-columns: 1fr; gap: 20px; }
+  .cta-person-grid { grid-template-columns: 1fr; }
+  .cta-person-img { display: none; }
+  .cta-person-content { padding: 64px 0; }
+  .cta-person-content h2 { font-size: 30px; }
 }
 @media (max-width: 640px) {
   .nav-links { display: none; }
@@ -673,4 +919,9 @@ footer { background: var(--footer-bg); color: rgba(255,255,255,.6); padding: 60p
   .pricing-grid { grid-template-columns: 1fr; }
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { justify-content: center; }
+  /* New sections */
+  .services-card-grid { grid-template-columns: 1fr; }
+  .why-highlight { flex-direction: column; gap: 12px; padding: 20px; }
+  .cta-person-content { padding: 48px 0; }
+  .cta-person-content h2 { font-size: 26px; }
 }
