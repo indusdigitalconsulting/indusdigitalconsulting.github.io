@@ -60,7 +60,7 @@ const FOOTER_HTML = `
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="logo">
-          <img src="assets/images/indus-logo.jpg" alt="Indus Digital Consulting" width="200" style="filter:brightness(0) invert(1)">
+          <img src="assets/images/indus-logo.jpg" alt="Indus Digital Consulting" width="200">
         </a>
         <p class="footer-desc">We help businesses in Mississauga, Toronto, and across the GTA grow their online presence through expert web design, SEO, and digital marketing.</p>
       </div>
