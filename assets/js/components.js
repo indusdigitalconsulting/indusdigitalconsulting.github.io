@@ -29,8 +29,7 @@ const NAV_HTML = `
             <a href="seo.html">Search Engine Optimization</a>
             <a href="local-seo.html">Local SEO</a>
             <a href="content-marketing.html">Content Marketing</a>
-            <a href="social-media.html">Social Media Marketing</a>
-            <a href="google-ads.html">Google Ads / PPC</a>
+            <a href="marketing-service.html">Marketing Services</a>
           </div>
         </div>
       </li>
@@ -47,8 +46,7 @@ const NAV_HTML = `
     <a href="seo.html" class="mobile-sub">— Search Engine Optimization</a>
     <a href="local-seo.html" class="mobile-sub">— Local SEO</a>
     <a href="content-marketing.html" class="mobile-sub">— Content Marketing</a>
-    <a href="social-media.html" class="mobile-sub">— Social Media</a>
-    <a href="google-ads.html" class="mobile-sub">— Google Ads / PPC</a>
+    <a href="marketing-service.html" class="mobile-sub">— Marketing Services</a>
     <a href="about.html">About Us</a>
     <a href="contact.html">Contact</a>
   </div>
@@ -71,8 +69,7 @@ const FOOTER_HTML = `
           <li><a href="seo.html">Search Engine Optimization</a></li>
           <li><a href="local-seo.html">Local SEO</a></li>
           <li><a href="content-marketing.html">Content Marketing</a></li>
-          <li><a href="social-media.html">Social Media Marketing</a></li>
-          <li><a href="google-ads.html">Google Ads / PPC</a></li>
+          <li><a href="marketing-service.html">Marketing Services</a></li>
         </ul>
       </div>
       <div class="footer-col">
