@@ -9,7 +9,7 @@ const NAV_HTML = `
   <div class="container">
     <span>📍 Serving Mississauga, Toronto &amp; the GTA</span>
     <div class="topbar-right">
-      <a href="tel:+16749914899">📞 (674) 991-4899</a>
+      <a href="tel:+16749914899">📞 674-991-4899</a>
       <a href="mailto:info@indusdigitalconsulting.com">✉ info@indusdigitalconsulting.com</a>
     </div>
   </div>
@@ -25,12 +25,14 @@ const NAV_HTML = `
         <a href="#">Services</a>
         <div class="dropdown-menu">
           <div class="dropdown-menu-inner">
+            <a href="strategic-marketing.html">Strategic Marketing</a>
             <a href="website-design.html">Website Design</a>
+            <!-- Hidden for now — HTML files retained
             <a href="seo.html">Search Engine Optimization</a>
             <a href="local-seo.html">Local SEO</a>
             <a href="content-marketing.html">Content Marketing</a>
-            <a href="social-media.html">Social Media Marketing</a>
-            <a href="google-ads.html">Google Ads / PPC</a>
+            -->
+            <a href="digital-marketing.html">Digital Marketing</a>
           </div>
         </div>
       </li>
@@ -43,12 +45,14 @@ const NAV_HTML = `
   </div>
   <div class="mobile-nav" id="mobileNav">
     <a href="index.html">Home</a>
+    <a href="strategic-marketing.html" class="mobile-sub">— Strategic Marketing</a>
     <a href="website-design.html" class="mobile-sub">— Website Design</a>
+    <!-- Hidden for now — HTML files retained
     <a href="seo.html" class="mobile-sub">— Search Engine Optimization</a>
     <a href="local-seo.html" class="mobile-sub">— Local SEO</a>
     <a href="content-marketing.html" class="mobile-sub">— Content Marketing</a>
-    <a href="social-media.html" class="mobile-sub">— Social Media</a>
-    <a href="google-ads.html" class="mobile-sub">— Google Ads / PPC</a>
+    -->
+    <a href="digital-marketing.html" class="mobile-sub">— Digital Marketing</a>
     <a href="about.html">About Us</a>
     <a href="contact.html">Contact</a>
   </div>
@@ -67,12 +71,14 @@ const FOOTER_HTML = `
       <div class="footer-col">
         <h5>Services</h5>
         <ul class="footer-links">
+          <li><a href="strategic-marketing.html">Strategic Marketing</a></li>
           <li><a href="website-design.html">Website Design</a></li>
+          <!-- Hidden for now — HTML files retained
           <li><a href="seo.html">Search Engine Optimization</a></li>
           <li><a href="local-seo.html">Local SEO</a></li>
           <li><a href="content-marketing.html">Content Marketing</a></li>
-          <li><a href="social-media.html">Social Media Marketing</a></li>
-          <li><a href="google-ads.html">Google Ads / PPC</a></li>
+          -->
+          <li><a href="digital-marketing.html">Digital Marketing</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -84,7 +90,7 @@ const FOOTER_HTML = `
       </div>
       <div class="footer-col">
         <h5>Contact</h5>
-        <div class="footer-contact-item"><span>📞</span><span><a href="tel:+16749914899">(674) 991-4899</a></span></div>
+        <div class="footer-contact-item"><span>📞</span><span><a href="tel:+16749914899">674-991-4899</a></span></div>
         <div class="footer-contact-item"><span>✉</span><span><a href="mailto:info@indusdigitalconsulting.com">info@indusdigitalconsulting.com</a></span></div>
         <div class="footer-contact-item"><span>📍</span><span>Mississauga, Ontario, Canada</span></div>
         <div class="footer-contact-item"><span>🕐</span><span>Mon–Fri: 9am – 6pm EST</span></div>
