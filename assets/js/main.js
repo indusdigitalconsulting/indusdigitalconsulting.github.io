@@ -1,55 +1,12 @@
 // ===========================
 // INDUS DIGITAL — main.js
+// Nav, mobile menu, smooth scroll and contact form are all handled in
+// components.js (which injects the nav/footer). Keeping the handlers here
+// too double-binds them — notably the hamburger, which toggled open then
+// shut on every tap. This file now only owns the scroll-in stat animation.
 // ===========================
 
 document.addEventListener('DOMContentLoaded', function () {
-
-  // Mobile hamburger toggle
-  const hamburger = document.getElementById('hamburger');
-  const mobileNav = document.getElementById('mobileNav');
-  if (hamburger && mobileNav) {
-    hamburger.addEventListener('click', function () {
-      mobileNav.classList.toggle('open');
-      const isOpen = mobileNav.classList.contains('open');
-      hamburger.setAttribute('aria-expanded', isOpen);
-    });
-  }
-
-  // Active nav link highlight
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav-links a, .mobile-nav a').forEach(function (link) {
-    const href = link.getAttribute('href');
-    if (href === currentPath || (currentPath === '' && href === 'index.html')) {
-      link.classList.add('active');
-    }
-  });
-
-  // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
-    anchor.addEventListener('click', function (e) {
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  });
-
-  // Contact form submit (demo)
-  const contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const btn = contactForm.querySelector('button[type="submit"]');
-      btn.textContent = '✓ Message Sent!';
-      btn.style.background = '#1AA08E';
-      setTimeout(function () {
-        btn.textContent = 'Send Message';
-        btn.style.background = '';
-        contactForm.reset();
-      }, 3000);
-    });
-  }
 
   // Animate stats on scroll
   const statNums = document.querySelectorAll('.stat-item strong, .why-num');

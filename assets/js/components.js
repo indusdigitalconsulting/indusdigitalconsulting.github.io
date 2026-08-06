@@ -16,11 +16,11 @@ const NAV_HTML = `
 </div>
 <nav class="navbar">
   <div class="container">
-    <a href="index.html" class="logo">
+    <a href="/" class="logo">
       <img src="assets/images/indus-logo.jpg" alt="Indus Digital Consulting" width="300" height="auto">
     </a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="/">Home</a></li>
       <li class="nav-dropdown">
         <a href="#">Services</a>
         <div class="dropdown-menu">
@@ -31,8 +31,8 @@ const NAV_HTML = `
             <a href="seo.html">Search Engine Optimization</a>
             <a href="local-seo.html">Local SEO</a>
             <a href="content-marketing.html">Content Marketing</a>
-            -->
             <a href="digital-marketing.html">Digital Marketing</a>
+            -->
           </div>
         </div>
       </li>
@@ -44,15 +44,15 @@ const NAV_HTML = `
     </button>
   </div>
   <div class="mobile-nav" id="mobileNav">
-    <a href="index.html">Home</a>
+    <a href="/">Home</a>
     <a href="strategic-marketing.html" class="mobile-sub">— Strategic Marketing</a>
     <a href="website-design.html" class="mobile-sub">— Website Design</a>
     <!-- Hidden for now — HTML files retained
     <a href="seo.html" class="mobile-sub">— Search Engine Optimization</a>
     <a href="local-seo.html" class="mobile-sub">— Local SEO</a>
     <a href="content-marketing.html" class="mobile-sub">— Content Marketing</a>
-    -->
     <a href="digital-marketing.html" class="mobile-sub">— Digital Marketing</a>
+    -->
     <a href="about.html">About Us</a>
     <a href="contact.html">Contact</a>
   </div>
@@ -63,7 +63,7 @@ const FOOTER_HTML = `
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="logo">
+        <a href="/" class="logo">
           <img src="assets/images/indus-logo.jpg" alt="Indus Digital Consulting" width="200">
         </a>
         <p class="footer-desc">We help businesses in Mississauga, Toronto, and across the GTA grow their online presence through expert web design, SEO, and digital marketing.</p>
@@ -77,8 +77,8 @@ const FOOTER_HTML = `
           <li><a href="seo.html">Search Engine Optimization</a></li>
           <li><a href="local-seo.html">Local SEO</a></li>
           <li><a href="content-marketing.html">Content Marketing</a></li>
-          -->
           <li><a href="digital-marketing.html">Digital Marketing</a></li>
+          -->
         </ul>
       </div>
       <div class="footer-col">
@@ -122,9 +122,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Active nav link
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const isHome = currentPage === 'index.html' || currentPage === '';
   document.querySelectorAll('.nav-links a, .mobile-nav a').forEach(function (link) {
     const href = link.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+    if (href === currentPage || (isHome && (href === '/' || href === 'index.html'))) {
       link.classList.add('active');
     }
   });
